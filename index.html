@@ -1,0 +1,41 @@
+<html>
+    <body bgcolor=#d4a3ae>
+        <center>
+            <h1> Food Delivery Time Prediction </h1><br>
+            <form method="POST", action="{{ url_for('predict') }}">
+                <b>
+                    ID:  <input type="number", name='id', placeholder="Enter ID"step="any"step="any"> <br><br>
+                    Delivery Person Age:  <input type="number", name='age', placeholder="Enter Age"step="any"> <br><br>
+                    Delivery Person Ratings:  <input type="number", name='ratings', placeholder="Enter Ratings"step="any"> <br><br>
+                    Restaurant Latitude: <input type="number", name='res_lat', placeholder="Enter Latitude"step="any"> <br><br>
+                    Restaurant Longitude: <input type="number", name='res_long', placeholder="Enter Longitude"step="any"> <br><br>
+                    Delivery Location Latitude: <input type="number", name='deli_lat', placeholder="Enter Delivery Latitude"step="any"> <br><br>
+                    Delivery Location Longitude: <input type="number", name='deli_long', placeholder="Enter Delivery Longitude"step="any"> <br><br>
+                    Vehicle Condition: <input type="number", name='vehicle_cond', placeholder="Enter Vehicle Condition"step="any"> <br><br>
+                    Multiple Deliveries: <input type="number", name='multi_deliver', placeholder="Enter Multiple Deliveries"step="any"> <br><br>
+                    Weather Conditions: <input type="number", name='weather', placeholder="Enter Weather Conditions"step="any"> <br><br>
+                    Type of Order: <input type="number", name='order_type', placeholder="Enter Type of Order"step="any"> <br><br>
+                    Type of Vehicle: <input type="number", name='vehicle_type', placeholder="Enter Type of Vehicle"step="any"> <br><br>
+                    Festival: <input type="number", name='festival', placeholder="Enter Festival"step="any"> <br><br>
+                    City: <input type="number", name='city', placeholder="Enter City"step="any"> <br><br>
+                    Road Traffic Density: <input type="number", name='traffic_density', placeholder="Enter Traffic Density"step="any"> <br><br>
+                    Day: <input type="number", name='day', placeholder="Enter Day"step="any"> <br><br>
+                    Month: <input type="number", name='month', placeholder="Enter Month"step="any"> <br><br>
+                    Quarter: <input type="number", name='quarter', placeholder="Enter Quarter"step="any"> <br><br>
+                    Year: <input type="number", name='year', placeholder="Enter Year"step="any"> <br><br>
+                    Day of Week: <input type="number", name='day_of_week', placeholder="Enter Day of Week"step="any"> <br><br>
+                    Is Month Start: <input type="number", name='is_month_start', placeholder="Enter Month Start"step="any"> <br><br>
+                    Is Month End: <input type="number", name='is_month_end', placeholder="Enter Month End"step="any"> <br><br>
+                    Is Quarter Start: <input type="number", name='is_quarter_start', placeholder="Enter Quarter Start"step="any"> <br><br>
+                    Is Quarter End: <input type="number", name='is_quarter_end', placeholder="Enter Quarter End"step="any"> <br><br>
+                    Is Year Start: <input type="number", name='is_year_start', placeholder="Enter Year Start"step="any"> <br><br>
+                    Is Year End: <input type="number", name='is_year_end', placeholder="Enter Year End"step="any"> <br><br>
+                    Is Weekend: <input type="number", name='is_weekend', placeholder="Enter Weekend"step="any"> <br><br>
+                    Order Prepare Time: <input type="number", name='order_prep_time', placeholder="Enter Order Prepare Time"step="any"> <br><br>
+                    Distance: <input type="number", name='distance', placeholder="Enter Distance"step="any"> <br><br>
+                </b>
+                <input type="submit", value='Predict!'>
+            </form>
+        </center>
+    </body>
+</html>
